@@ -24,13 +24,13 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className={`fixed border-b border-transparent transition-colors duration-300 py-5 top-0 inset-x-0 z-50 ${scroll ? 'scrolled ease-in' : 'ease-out'}`}>
+            <nav className={`fixed border-b border-transparent transition-colors duration-300 py-5 top-0 inset-x-0 z-50 ${scroll ? 'scrolled ease-in' : 'ease-out text-white'}`}>
                 <div className="container lg:px-32 md:px-12 px-8 flex items-center justify-center max-w-[1200px]">
                     <div className='flex justify-between w-full'>
                         {
                             navLinks.map(({ href, label }) => (
                                 <Link href={href} key={label}>
-                                    <a className={`uppercase font-semibold transition-colors duration-100 hover:text-gray-400 ${router.pathname === href ? 'text-gray-400 border-b-[1px] border-gray-400' : ''}`}>{label}</a>
+                                    <a className={`uppercase rounded-md px-2 md:px-6 py-2 font-semibold transition-colors duration-100 ${router.pathname === href ? 'text-black bg-neutral-100 hover:text-black' : 'text-neutral-400 hover:text-neutral-300'}`}>{label}</a>
                                 </Link>
                             ))
                         }
