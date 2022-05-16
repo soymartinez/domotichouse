@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Navbar from "./Navbar";
+import Navbar from './navbar'
 
 export default function Layout({ children, title }) {
     return (
@@ -8,6 +8,7 @@ export default function Layout({ children, title }) {
                 <title>{title}</title>
                 <meta name={title} content={title} />
                 <link rel="icon" href="/favicon.ico" />
+                <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'></link>
             </Head>
 
             <Navbar />
