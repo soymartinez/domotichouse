@@ -1,0 +1,11 @@
+[33mce4b72e[m[33m ([m[1;36mHEAD -> [m[1;32msections[m[33m, [m[1;31morigin/sections[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m feat: homepage
+[33mffbaba6[m fix: responsive
+[33m67d5fbf[m update: navbar
+[33mdd588a9[m feat: layout
+[33mf3223a3[m rm: styleshome
+[33m244ce03[m mod: npm/yarn
+[33mdd268ab[m fix: stylescontainer
+[33ma00dc76[m comp: navbar
+[33m97a975d[m add: tailwindcss
+[33mb4b33f6[m feat: pages
+[33m6a30a54[m Initial commit from Create Next App

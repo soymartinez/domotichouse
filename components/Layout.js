@@ -1,20 +1,18 @@
-import Head from 'next/head'
+import Head from "next/head";
 import Navbar from "./Navbar";
 
 export default function Layout({ children, title }) {
-    return (
-        <div className='container lg:px-32 md:px-12 px-8'>
-            <Head>
-                <title>{title}</title>
-                <meta name={title} content={title} />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+  return (
+    <div className="container lg:px-32 md:px-12 px-8">
+      <Head>
+        <title>{title}</title>
+        <meta name={title} content={title} />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-            <Navbar />
+      <Navbar />
 
-            <main className='main'>
-                {children}
-            </main>
-        </div>
-    )
+      <main className="main">{children}</main>
+    </div>
+  );
 }

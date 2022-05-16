@@ -1,11 +1,11 @@
-import Layout from '../components/Layout';
+import Layout from "../components/Layout";
+import Tabla from "../components/Tabla";
 
 export default function Temperatura() {
-    return (
-        <Layout title={'Temperatura'}>
-            <h1 className='text-center text-3xl font-bold'>
-                Contenido de temperatura
-            </h1>
-        </Layout>
-    );
+  return (
+    <Layout title={"Temperatura"}>
+      <Tabla />
+      <h1 className="text-center text-3xl font-bold"></h1>
+    </Layout>
+  );
 }

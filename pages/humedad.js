@@ -1,11 +1,11 @@
-import Layout from '../components/Layout';
+import Layout from "../components/Layout";
+import Tabla from "../components/Tabla";
 
 export default function Humedad() {
-    return (
-        <Layout title={'Humedad'}>
-            <h1 className='text-center text-3xl font-bold'>
-                Contenido de humedad
-            </h1>
-        </Layout>
-    );
+  return (
+    <Layout title={"Humedad"}>
+      <Tabla />
+      <h1 className="text-center text-3xl font-bold"></h1>
+    </Layout>
+  );
 }
