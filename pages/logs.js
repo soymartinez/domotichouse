@@ -4,10 +4,10 @@ export default function Logs({ data }) {
     return (
         <Layout title={'Logs'}>
             <div className="font-bold md:text-xl w-full">
-                <div class="flex flex-col mt-2">
-                    <div class="overflow-x-auto scrollbar-thin scrollbar-thumb-neutral-400 scrollbar-track-neutral-200 md:rounded-lg rounded-md">
-                        <div class="inline-block min-w-full">
-                            <div class="overflow-hidden">
+                <div className="flex flex-col mt-2">
+                    <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-neutral-400 scrollbar-track-neutral-200 md:rounded-lg rounded-md">
+                        <div className="inline-block min-w-full">
+                            <div className="overflow-hidden">
                                 <table className="min-w-full">
                                     <thead className='bg-neutral-100'>
                                         <tr>
