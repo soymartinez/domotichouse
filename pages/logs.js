@@ -48,7 +48,7 @@ export default function Logs({ data }) {
 }
 
 export async function getServerSideProps() {
-    const res = await fetch('http://localhost:3000/api/logs');
+    const res = await fetch(process.env.API_URL);
     const data = await res.json();
     return {
         props: { data },
