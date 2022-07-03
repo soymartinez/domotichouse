@@ -1,7 +1,7 @@
 import mqtt from 'mqtt';
 import { useState, useEffect } from 'react';
 
-export function connBroker(topic) {
+export function Subscriber(topic) {
     const [status, setStatus] = useState(false);
     const [payload, setPayload] = useState([]);
 
@@ -20,4 +20,22 @@ export function connBroker(topic) {
     }, []);
 
     return [status, payload];
+}
+
+export function Publisher(topic, message) {
+    useEffect(() => {
+        const client = mqtt.connect('wss://broker.emqx.io:8084/mqtt');
+        client.on('connect', () => {
+            client.publish(topic, message, { qos: 1, retain: true }, (err) => {
+                if (!err) { console.log(`Publicado a ${topic}`); }
+                else { console.log(`Error al publicar a ${topic}`); }
+            });
+        });
+    }, []);
+}
+
+export function Disconnect() {
+    client.on('disconnect', () => {
+        console.log('Desconectado');
+    });
 }
